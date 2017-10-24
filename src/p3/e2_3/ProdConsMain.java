@@ -1,4 +1,9 @@
-package edu.isistan.buffer;
+package p3.e2_3;
+
+import edu.isistan.buffer.CircularBuffer;
+import edu.isistan.buffer.Consumer;
+import edu.isistan.buffer.IBuffer;
+import edu.isistan.buffer.Producer;
 
 import java.lang.management.ManagementFactory;
 import java.lang.management.ThreadInfo;
@@ -23,19 +28,19 @@ public class ProdConsMain {
 	 * + CircularBuffer
 	 * + OneElementBuffer
 	 */
-	private static IBuffer<String> buffer = new CircularBuffer<>();
+	private static IBuffer<String> buffer = new SyncCircularBuffer<>();
 
 	private static int nProducers = 10;
-	private static int produce = 60;
-	private static long waitProducer = 1000;
+	private static int produce = 10;
+	private static long waitProducer = 100;
 	private static int nConsumers = 10;
-	private static int consume = 60;
-	private static long waitConsumer = 100;
+	private static int consume = 10;
+	private static long waitConsumer = 1000;
 
 	/**
 	 * Detectar deadlocks automaticamente. 
 	 */
-	private static boolean deadlockDetection = false;
+	private static boolean deadlockDetection = true;
 	/* ***************************************************************
 	 * No modificar a partir de este punto!!
 	 * ***************************************************************
