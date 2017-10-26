@@ -1,0 +1,4 @@
+Argentina	Bolivia	5	0
+Peru	Venezuela	2	3
+Colombia	Rusia	1	1
+Brasil	EEUU	4	0

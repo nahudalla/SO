@@ -1,0 +1,8 @@
+Argentina	45
+Bolivia	10
+Peru	10
+Venezuela	5
+Colombia	20
+Rusia	40
+EEUU	30
+Brasil	27
